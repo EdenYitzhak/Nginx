@@ -23,6 +23,8 @@ given my Private IP 10.0.2.139 public IP:3.231.241.165
 
 Instance: i-0f0f27870be0928a6
 
+![image](https://github.com/user-attachments/assets/84781680-bb4e-4dc2-b666-2302fa753b12)
+
 Configured a Virtual Private Cloud (VPC) with public and private subnets.
 Created security groups to allow HTTP (port 80) and SSH (port 22) access.
 
