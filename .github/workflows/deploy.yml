@@ -11,18 +11,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the repository code
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      # Set up - Terraform
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v1
 
+      # Initialize Terraform
       - name: Initialize Terraform
         run: terraform init
 
+      # Apply Terraform configuration
       - name: Apply Terraform
         run: terraform apply -auto-approve
 
+      # SSH into EC2 and deploy Docker
       - name: SSH into EC2 and deploy Docker
         uses: appleboy/ssh-action@v0.1.0
         with:
