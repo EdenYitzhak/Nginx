@@ -1,31 +1,35 @@
+# DevOps Home Assignment - Detailed Process Documentation
+
+## Overview
+The objective of this assignment was to deploy an NGINX instance that is publicly accessible and displays the text "yo this is nginx" upon access. The task involved using Terraform for infrastructure setup, Docker for containerization, and AWS for deployment. Below is a step-by-step explanation of the process, including the challenges faced and how they were addressed.
 
 ## Step-by-Step Process
 
 ### Step 1: AWS Infrastructure Setup
 **Tools Used**: Terraform (Infrastructure as Code - IaC)
 
-1. Initialize Terraform configuration.
-2. Define AWS resources (EC2 instances, VPCs, Security Groups).
-3. Apply the Terraform plan to provision the infrastructure.
 Process in dedicated branch
 
-## using AWS CLI
-aws configure
-Access key ID :******R6GGD
-Secret access key: ******jJOhQ87
-region name (us-east-1)
-output format (json)
+### Step 2: Docker Containerization
+**Tools Used**: Docker
 
-## EC2 Instance
-given my Private IP 10.0.2.139 public IP:3.231.241.165
--> terraform init
--> terraform apply
+Process: dedicated branch
 
-Instance: i-0f0f27870be0928a6
+### Step 3+4: Public Access
+**Tools Used**: AWS, NGINX
 
-Configured a Virtual Private Cloud (VPC) with public and private subnets.
-Created security groups to allow HTTP (port 80) and SSH (port 22) access.
+Process:
+1. Configure the NGINX server to serve the application.
+2. Set up public access by configuring the AWS Security Groups and network settings.
 
+### GitHub Workflow for Deployment
+**Tools Used**: GitHub Actions
+
+Process:
+1. Define the CI/CD pipeline using GitHub Actions.
+2. Configure the workflow to automate the deployment process.
+
+## Code Snippets
 
 ### Terraform Script- to initiate EC2 instance
 #### main.tf-for step 1-AWS
@@ -135,38 +139,3 @@ resource "aws_instance" "nginx_instance" {
     Name = "NginxInstance"
   }
 }
-
-```
-
-## Challenges:
-
-Internet Connectivity Issues: The instance could not access the internet, it seems that when Im sshing to the the host all
-
-you can see here:
-
-```hcl
-C:\Users\97250>ssh -i C:\Users\97250\Terraform\devops-assignment\my-key-pair.pem ec2-user@3.231.241.165
-   ,     #_
-   ~\_  ####_        Amazon Linux 2023
-  ~~  \_#####\
-  ~~     \###|
-  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
-   ~~       V~' '->
-    ~~~         /
-   ,     #_
-   ~\_  ####_        Amazon Linux 2023
-  ~~  \_#####\
-  ~~     \###|
-  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
-   ~~       V~' '->
-    ~~~         /
-      ~~._.   _/
-         _/ _/
-       _/m/'
-Last login: Tue Jul 30 16:05:40 2024 from 147.235.215.142
-```
-but encountered an issue with yum update due to network connectivity problems, which was the only thing missing to integrate the running instance to docker
-and since I'm unable to use yum update to install Docker directly on the EC2 instance due to network issues,
-I Verified Docker functionality locally using Docker Desktop.
-
-which you will see on the step 2 of Docker Containerization which you will eventually execute and get a web with "yo this is nginx" 
