@@ -13,14 +13,14 @@ Process in dedicated branch
 aws configure
 Access key ID :******R6GGD
 Secret access key: ******jJOhQ87
-region name (us-east-1).
-output format (json).
+region name (us-east-1)
+output format (json)
 
 ## EC2 Instance
 given my Private IP 10.0.2.139 public IP:3.231.241.165
 -> terraform init
--> terraform apply:
-terraform apply
+-> terraform apply
+
 Instance: i-0f0f27870be0928a6
 
 Configured a Virtual Private Cloud (VPC) with public and private subnets.
