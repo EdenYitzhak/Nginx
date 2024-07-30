@@ -5,22 +5,17 @@ The objective of this assignment was to deploy an NGINX instance that is publicl
 
 ## Step-by-Step Process
 
-### Step 1: AWS Infrastructure Setup
+### AWS Infrastructure 
 **Tools Used**: Terraform (Infrastructure as Code - IaC)
 
 Process in dedicated branch
 
-### Step 2: Docker Containerization
+### Docker Containerization
 **Tools Used**: Docker
 
 Process: dedicated branch
 
-### Step 3+4: Public Access
-**Tools Used**: AWS, NGINX
 
-Process:
-1. Configure the NGINX server to serve the application.
-2. Set up public access by configuring the AWS Security Groups and network settings.
 
 ### GitHub Workflow for Deployment
 **Tools Used**: GitHub Actions
