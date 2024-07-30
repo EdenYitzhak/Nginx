@@ -7,13 +7,7 @@ Dockerized NGINX can run locally on your machine.
 
 Process:
 1. Run the following commands to pull and run the Docker image:
-docker pull edeny/my-nginx
-docker run -d -p 80:80 edeny/my-nginx
-Once the container is running, go to http://localhost to see the "yo this is nginx" message.
 
-
-### Terraform Script- to initiate EC2 instance
-#### main.tf
 ```hcl
 docker pull edeny/my-nginx
 docker run -d -p 80:80 edeny/my-nginx
