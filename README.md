@@ -5,7 +5,7 @@
 **Tools Used**: Terraform (Infrastructure as Code - IaC)
 
 1. Initialize Terraform configuration.
-2. Define AWS resources (EC2 instances, VPCs, Security Groups).
+2. Using AWS resources (EC2 instances, VPCs, Security Groups).
 3. Apply the Terraform plan to provision the infrastructure.
 Process in dedicated branch
 
