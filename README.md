@@ -166,7 +166,7 @@ C:\Users\97250>ssh -i C:\Users\97250\Terraform\devops-assignment\my-key-pair.pem
 Last login: Tue Jul 30 16:05:40 2024 from 147.235.215.142
 ```
 but encountered an issue with yum update due to network connectivity problems, which was the only thing missing to integrate the running instance to docker
-and since I unable to use yum update to install Docker directly on the EC2 instance due to network issues,
+and since I'm unable to use yum update to install Docker directly on the EC2 instance due to network issues,
 I Verified Docker functionality locally using Docker Desktop.
 
 which you will see on the step 2 of Docker Containerization which you will eventually execute and get a web with "yo this is nginx" 
