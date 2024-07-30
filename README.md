@@ -7,7 +7,7 @@ Dockerized NGINX can run locally on the private machine.
 
 Process:
 1. Run the following commands to pull and run the Docker image:
-
+*** created the Imgage on my docker-hub
 ```hcl
 docker pull edeny/my-nginx
 docker run -d -p 80:80 edeny/my-nginx
