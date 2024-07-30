@@ -1,4 +1,4 @@
-# DevOps Home Assignment - Detailed Process Documentation
+# Home Assignment - Detailed Process Documentation
 
 ## Overview
 The objective of this assignment was to deploy an NGINX instance that is publicly accessible and displays the text "yo this is nginx" upon access. The task involved using Terraform for infrastructure setup, Docker for containerization, and AWS for deployment. Below is a step-by-step explanation of the process, including the challenges I faced and how they were addressed.
