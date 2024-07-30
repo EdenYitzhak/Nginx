@@ -3,7 +3,7 @@
 ### Step 2:Docker Containerization
 
 Dockerize NGINX and configure it to respond with the text "yo this is nginx" upon access.
-Dockerized NGINX can run locally on your machine.
+Dockerized NGINX can run locally on the private machine.
 
 Process:
 1. Run the following commands to pull and run the Docker image:
