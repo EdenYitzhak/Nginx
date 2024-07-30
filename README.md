@@ -16,10 +16,7 @@ Process:
 ### Step 2: Docker Containerization
 **Tools Used**: Docker
 
-Process:
-1. Write a Dockerfile to containerize the NGINX application.
-2. Build the Docker image.
-3. Run the Docker container locally to test.
+Process: dedicated file
 
 ### Step 3+4: Public Access
 **Tools Used**: AWS, NGINX
