@@ -136,7 +136,7 @@ resource "aws_instance" "nginx_instance" {
   }
 }
 
-'''
+```
 
 ## Challenges:
 
