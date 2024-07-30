@@ -8,10 +8,7 @@ The objective of this assignment was to deploy an NGINX instance that is publicl
 ### Step 1: AWS Infrastructure Setup
 **Tools Used**: Terraform (Infrastructure as Code - IaC)
 
-Process:
-1. Initialize Terraform configuration.
-2. Define AWS resources (EC2 instances, VPCs, Security Groups).
-3. Apply the Terraform plan to provision the infrastructure.
+Process in dedicated branch
 
 ### Step 2: Docker Containerization
 **Tools Used**: Docker
@@ -35,7 +32,7 @@ Process:
 ## Code Snippets
 
 ### Terraform Script- to initiate EC2 instance
-#### main.tf
+#### main.tf-for step 1-AWS
 ```hcl
 provider "aws" {
   region = "us-east-1"
