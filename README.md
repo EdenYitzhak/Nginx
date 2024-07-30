@@ -146,7 +146,7 @@ resource "aws_instance" "nginx_instance" {
 
 ## Challenges:
 
-Internet Connectivity Issues: The instance could not access the internet, it seems that when Im sshing to the the host all
+Internet Connectivity Issues: The instance could not access the internet (host sshable)
 
 you can see here:
 
@@ -174,7 +174,7 @@ Last login: Tue Jul 30 16:05:40 2024 from 147.235.215.142
 
 ![i-0f0f27870be0928a6](https://github.com/user-attachments/assets/f2d29fad-8c78-43f3-adf0-433c2e7b6151)
 
-but encountered an issue with yum update due to network connectivity problems, which was the only thing missing to integrate the running instance to docker
+encountered an issue with yum update due to network connectivity problems, which was the only thing missing to integrate the running instance to docker
 and since I'm unable to use yum update to install Docker directly on the EC2 instance due to network issues,
 I Verified Docker functionality locally using Docker Desktop.
 
