@@ -7,7 +7,7 @@
 1. Initialize Terraform configuration.
 2. Using AWS resources (EC2 instances, VPCs, Security Groups).
 3. Apply the Terraform plan to provision the infrastructure.
-Process in dedicated branch
+
 
 ## using AWS CLI
 aws configure
