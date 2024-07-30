@@ -22,6 +22,10 @@ given my Private IP 10.0.2.139 public IP:3.231.241.165
 -> terraform apply
 
 Instance: i-0f0f27870be0928a6
+![image](https://github.com/user-attachments/assets/a3087360-bb1c-486e-8af2-c76f34a48954)
+![image](https://github.com/user-attachments/assets/5e700edf-5f82-43db-88c5-383df2626b3c)
+![image](https://github.com/user-attachments/assets/ddd3c432-d9c4-4d52-bc04-627a57b66bd6)
+
 
 ![image](https://github.com/user-attachments/assets/84781680-bb4e-4dc2-b666-2302fa753b12)
 
