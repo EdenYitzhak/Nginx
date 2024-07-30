@@ -21,7 +21,7 @@ Process: dedicated branch
 **Tools Used**: GitHub Actions
 
 Process:
-1. Define the CI/CD pipeline using GitHub Actions.
+1. CI/CD pipeline using GitHub Actions.
 2. Configure the workflow to automate the deployment process.
 
 ## Code Snippets
