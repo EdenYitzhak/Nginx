@@ -16,7 +16,7 @@ Process:
 ### Step 2: Docker Containerization
 **Tools Used**: Docker
 
-Process: dedicated file
+Process: dedicated branch
 
 ### Step 3+4: Public Access
 **Tools Used**: AWS, NGINX
