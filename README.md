@@ -143,7 +143,7 @@ resource "aws_instance" "nginx_instance" {
 Internet Connectivity Issues: The instance could not access the internet, it seems that when Im sshing to the the host all
 
 you can see here:
-{
+
 ```hcl
 C:\Users\97250>ssh -i C:\Users\97250\Terraform\devops-assignment\my-key-pair.pem ec2-user@3.231.241.165
    ,     #_
@@ -164,7 +164,7 @@ C:\Users\97250>ssh -i C:\Users\97250\Terraform\devops-assignment\my-key-pair.pem
          _/ _/
        _/m/'
 Last login: Tue Jul 30 16:05:40 2024 from 147.235.215.142
-}
+-----
 but encountered an issue with yum update due to network connectivity problems, which was the only thing missing to integrate the running instance to docker
 and since I unable to use yum update to install Docker directly on the EC2 instance due to network issues,
 I Verified Docker functionality locally using Docker Desktop.
